@@ -1,0 +1,15 @@
+{
+  "name": "nuxt",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev"
+  },
+  "devDependencies": {
+    "@paro-paro/vite-plugin-vuetify-sass": "workspace:*",
+    "nuxt": "^3.8.0",
+    "sass": "^1.69.5",
+    "vite-plugin-vuetify": "^1.0.2",
+    "vuetify": "^3.3.23"
+  }
+}

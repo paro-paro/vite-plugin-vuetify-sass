@@ -1,0 +1,6 @@
+@use 'vuetify/settings' with (
+  $reset: false,
+  $utilities: false,
+  $button-height: 200px,
+  $button-border-radius: 50px
+);
