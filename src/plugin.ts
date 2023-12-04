@@ -44,7 +44,7 @@ export function plugin(options: PluginOptions): Plugin {
 
         tempFiles.set(file, content)
         return ssr
-          ? `/@${VIRTUAL_VUETIFY_SASS}/${file}`
+          ? `/@ssr/${VIRTUAL_VUETIFY_SASS}/${file}`
           : `/@fs/${VIRTUAL_VUETIFY_SASS}/${file}`
       }
     },
@@ -55,7 +55,7 @@ export function plugin(options: PluginOptions): Plugin {
         return tempFiles.get(file)
       }
 
-      if (id.startsWith(`/@${VIRTUAL_VUETIFY_SASS}/`)) {
+      if (id.startsWith(`/@ssr/${VIRTUAL_VUETIFY_SASS}/`)) {
         const file = REGEX_2.exec(id)![1]
         return tempFiles.get(file)
       }
