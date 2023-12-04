@@ -4,7 +4,9 @@
 
 Copy of [vite-plugin-vuetify](https://github.com/vuetifyjs/vuetify-loader/blob/master/packages/vite-plugin) 's internal `stylesPlugin` with a few tweaks. 
 
-Meant to be used in `Nuxt` applications with `SSR` enabled. Check this (infamous) issue: [#290](https://github.com/vuetifyjs/vuetify-loader/issues/290)
+Meant to be used in `Nuxt` applications with `SSR` enabled. 
+
+Check this (infamous) issue: [#290](https://github.com/vuetifyjs/vuetify-loader/issues/290)
 
 For more detailed info, read the [vuetify documentation](https://vuetifyjs.com/en/), specially the [SASS](https://vuetifyjs.com/en/features/sass-variables) and [treeshaking](https://vuetifyjs.com/en/features/treeshaking) sections.
 
