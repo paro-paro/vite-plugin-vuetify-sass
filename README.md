@@ -2,15 +2,13 @@
 
 [![NPM version](https://img.shields.io/npm/v/@paro-paro/vite-plugin-vuetify-sass?color=a1b858)](https://www.npmjs.com/package/@paro-paro/vite-plugin-vuetify-sass)
 
-Copy of [vite-plugin-vuetify](https://github.com/vuetifyjs/vuetify-loader/blob/master/packages/vite-plugin) 's internal `stylesPlugin` with a few tweaks. 
+Copy of [vite-plugin-vuetify](https://github.com/vuetifyjs/vuetify-loader/blob/master/packages/vite-plugin) 's internal style plugin with a few tweaks. 
 
-Meant to be used in `Nuxt` applications with `SSR` enabled. 
+Meant to be used in `Nuxt` applications with `SSR` enabled.
 
-Check this (infamous) issue: [#290](https://github.com/vuetifyjs/vuetify-loader/issues/290)
+For more detailed info, read the [vuetify documentation](https://vuetifyjs.com/en/), specially the [SASS](https://vuetifyjs.com/en/features/sass-variables) and [treeshaking](https://vuetifyjs.com/en/features/treeshaking) sections. Also, check this (in)famous [issue.](https://github.com/vuetifyjs/vuetify-loader/issues/290)
 
-For more detailed info, read the [vuetify documentation](https://vuetifyjs.com/en/), specially the [SASS](https://vuetifyjs.com/en/features/sass-variables) and [treeshaking](https://vuetifyjs.com/en/features/treeshaking) sections.
-
-**Note:** This plugin does not include `auto-import - treeshaking` functionality, so you need to still leverage `vite-plugin-vuetify` for that. Just make sure that you do not pass the `styles` option to the plugin (so its internal stylesPlugin is not added to vite).
+> This plugin does not include auto-import / treeshaking functionality, so you still need to leverage the `vite-plugin-vuetify` for that. Just make sure you do not pass the `styles` option when using it.
 
 ## Install
 
