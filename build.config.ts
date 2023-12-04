@@ -1,11 +1,12 @@
 import { defineBuildConfig } from 'unbuild'
 
 export default defineBuildConfig({
-  outDir: 'dist',
-  entries: ['./src/index'],
   clean: true,
   declaration: true,
   sourcemap: true,
+  failOnWarn: true,
+  entries: ['./src/index'],
+  outDir: 'dist',
   externals: ['vite'],
   rollup: {
     emitCJS: true,

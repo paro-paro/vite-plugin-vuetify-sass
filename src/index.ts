@@ -1,6 +1,6 @@
-import { plugin } from './plugin'
-import { LOGGER_PREFIX } from './constants'
 import type { Plugin, PluginOptions } from './types'
+import { LOGGER_PREFIX } from './constants'
+import { plugin } from './plugin'
 
 export default function vitePlugin(options: PluginOptions): Plugin {
   if (!options.configFile)

@@ -2,11 +2,13 @@
 
 [![NPM version](https://img.shields.io/npm/v/@paro-paro/vite-plugin-vuetify-sass?color=a1b858)](https://www.npmjs.com/package/@paro-paro/vite-plugin-vuetify-sass)
 
-Copy of [vite-plugin-vuetify](https://github.com/vuetifyjs/vuetify-loader/blob/master/packages/vite-plugin) 's internal `stylesPlugin` (with a few tweaks).
+Copy of [vite-plugin-vuetify](https://github.com/vuetifyjs/vuetify-loader/blob/master/packages/vite-plugin) 's internal `stylesPlugin` with a few tweaks. 
 
-Read the [vuetify documentation](https://vuetifyjs.com/en/) first, specially the [SASS](https://vuetifyjs.com/en/features/sass-variables) and [treeshaking](https://vuetifyjs.com/en/features/treeshaking) sections.
+Meant to be used in `Nuxt` applications with `SSR` enabled. Check this (infamous) issue: [#290](https://github.com/vuetifyjs/vuetify-loader/issues/290)
 
-> Meant to be used in `Nuxt` applications with `SSR` enabled.
+For more detailed info, read the [vuetify documentation](https://vuetifyjs.com/en/), specially the [SASS](https://vuetifyjs.com/en/features/sass-variables) and [treeshaking](https://vuetifyjs.com/en/features/treeshaking) sections.
+
+**Note:** This plugin does not include `auto-import - treeshaking` functionality, so you need to still leverage `vite-plugin-vuetify` for that. Just make sure that you do not pass the `styles` option to the plugin (so its internal stylesPlugin is not added to vite).
 
 ## Install
 
@@ -36,10 +38,12 @@ pnpm add -D @paro-paro/vite-plugin-vuetify-sass
 
 ```ts
 import { defineConfig } from 'vite'
+import vuetify from 'vite-plugin-vuetify'
 import vuetifySass from '@paro-paro/vite-plugin-vuetify-sass'
 
 export default defineConfig({
   plugins: [
+    vuetify({ autoImport: true }), // do not pass the 'styles' option
     vuetifySass({ configFile: 'src/assets/settings.scss' }),
   ],
 })
@@ -50,6 +54,7 @@ export default defineConfig({
 `nuxt.config.ts`
 
 ```ts
+import vuetify from 'vite-plugin-vuetify'
 import vuetifySass from '@paro-paro/vite-plugin-vuetify-sass'
 
 export default defineNuxtConfig({
@@ -62,9 +67,12 @@ export default defineNuxtConfig({
   },
   hooks: {
     'vite:extendConfig': (config) => {
-      config.plugins!.push(vuetifySass({
-        configFile: 'assets/settings.scss',
-      }))
+      config.plugins!.push(
+        vuetify({ autoImport: true }), // do not pass the 'styles' option
+        vuetifySass({
+          configFile: 'assets/settings.scss',
+        }),
+      )
     },
   },
 })

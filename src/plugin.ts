@@ -1,8 +1,8 @@
+import type { Plugin, PluginOptions } from './types'
 import { cwd } from 'node:process'
 import { isAbsolute, join, normalize, relative } from 'pathe'
-import type { Plugin, PluginOptions } from './types'
-import { getVuetifyRootDir, isVuetifyComponentStyle, isVuetifyMainStyle } from './helpers'
 import { REGEX_1, REGEX_2, VIRTUAL_VUETIFY_SASS } from './constants'
+import { getVuetifyRootDir, isVuetifyComponentStyle, isVuetifyMainStyle } from './helpers'
 
 export function plugin(options: PluginOptions): Plugin {
   let configFile: string
