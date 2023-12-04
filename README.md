@@ -40,11 +40,13 @@ pnpm add -D @paro-paro/vite-plugin-vuetify-sass
 
 ```ts
 import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 import vuetify from 'vite-plugin-vuetify'
 import vuetifySass from '@paro-paro/vite-plugin-vuetify-sass'
 
 export default defineConfig({
   plugins: [
+    vue(),
     vuetify({ autoImport: true }), // do not pass the 'styles' option
     vuetifySass({ configFile: 'src/assets/settings.scss' }),
   ],
