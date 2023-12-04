@@ -6,9 +6,14 @@ Copy of [vite-plugin-vuetify](https://github.com/vuetifyjs/vuetify-loader/blob/m
 
 Meant to be used in `Nuxt` applications with `SSR` enabled.
 
-For more detailed info, read the [vuetify documentation](https://vuetifyjs.com/en/), specially the [SASS](https://vuetifyjs.com/en/features/sass-variables) and [treeshaking](https://vuetifyjs.com/en/features/treeshaking) sections. Also, check this (in)famous [issue.](https://github.com/vuetifyjs/vuetify-loader/issues/290)
+For more detailed info, check the [vuetify documentation](https://vuetifyjs.com/en/), specially the [SASS](https://vuetifyjs.com/en/features/sass-variables) and [treeshaking](https://vuetifyjs.com/en/features/treeshaking) sections. 
 
-> This plugin does not include auto-import / treeshaking functionality, so you still need to leverage the `vite-plugin-vuetify` for that. Just make sure you do not pass the `styles` option when using it.
+You can also check this (in)famous [issue](https://github.com/vuetifyjs/vuetify-loader/issues/290) for context.
+
+## Notes
+This plugin does not include any auto-import or treeshaking functionality. For that, you still need to use the original vite-plugin-vuetify.
+
+Just make sure that you do not pass the `styles` option to the plugin. This way, only the internal import plugin (for treeshaking) will be used.
 
 ## Install
 
