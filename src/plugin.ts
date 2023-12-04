@@ -1,7 +1,7 @@
 import type { Plugin, PluginOptions } from './types'
 import { cwd } from 'node:process'
 import { isAbsolute, join, normalize, relative } from 'pathe'
-import { REGEX_1, REGEX_2, VIRTUAL_VUETIFY_SASS } from './constants'
+import { LOGGER_PREFIX, REGEX_1, REGEX_2, VIRTUAL_VUETIFY_SASS } from './constants'
 import { getVuetifyRootDir, isVuetifyComponentStyle, isVuetifyMainStyle } from './helpers'
 
 export function plugin(options: PluginOptions): Plugin {
@@ -15,6 +15,13 @@ export function plugin(options: PluginOptions): Plugin {
 
     /* vite */
     configResolved(resolvedConfig) {
+      const stylesPlugin = resolvedConfig.plugins.find(plugin => plugin.name === 'vuetify:styles')
+      if (stylesPlugin) {
+        throw new Error(
+         `${LOGGER_PREFIX}: Internal style plugin from vite-plugin-vuetify detected. Do not use the 'styles' option from vite-plugin-vuetify.`,
+        )
+      }
+
       if (isAbsolute(options.configFile))
         configFile = options.configFile
       else

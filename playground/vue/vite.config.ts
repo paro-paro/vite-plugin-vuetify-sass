@@ -9,7 +9,7 @@ export default defineConfig({
   server: { port: 3001 },
   plugins: [
     vue(),
-    vuetify(),
+    vuetify({ autoImport: true }),
     vuetifySass({ configFile: 'src/assets/settings.scss' }),
     inspect(),
   ],

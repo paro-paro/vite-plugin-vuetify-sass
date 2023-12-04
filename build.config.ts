@@ -7,7 +7,7 @@ export default defineBuildConfig({
   failOnWarn: true,
   entries: ['./src/index'],
   outDir: 'dist',
-  externals: ['vite'],
+  // externals: ['vite'],
   rollup: {
     emitCJS: true,
   },
