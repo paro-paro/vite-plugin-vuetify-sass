@@ -23,7 +23,7 @@ Use your favorite package manager.
 pnpm add -D @paro-paro/vite-plugin-vuetify-sass
 ``` 
 
-> Vite v3.1 (or above) and Vuetify v3.0.0 (or above) are required.
+> Vuetify v3.0.0 (or above) and Vite v3.1 (or above) are required. Vite 5.x is also supported.
 
 ## Usage
 
