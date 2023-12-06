@@ -14,9 +14,7 @@ You can also check this (in)famous [issue](https://github.com/vuetifyjs/vuetify-
 
 ## SASS compilation
 
-Currently, there are several open issues and discussions around the slow performance of SASS compilation with Vite. 
-
-Despite this, I have not experienced a significant performance hit when using this plugin in a Vite + Vue + Vuetify application.
+Currently, there are several open issues and discussions around the slow performance of SASS compilation with Vite. Despite this, I have not experienced a significant performance hit when using this plugin in a Vite + Vue + Vuetify application.
 
 The big performance hit seems to be a Nuxt specific [issue](https://github.com/nuxt/nuxt/issues/13824#issuecomment-1397319191) and heavily affects the DX with a very slow warm up time (dev server) when compiling SASS files.
 
