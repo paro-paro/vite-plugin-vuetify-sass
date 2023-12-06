@@ -10,6 +10,6 @@
     "nuxt": "^3.8.2",
     "sass": "^1.69.5",
     "vite-plugin-vuetify": "^1.0.2",
-    "vuetify": "^3.4.4"
+    "vuetify": "^3.4.5"
   }
 }

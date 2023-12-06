@@ -9,10 +9,10 @@
     "@paro-paro/vite-plugin-vuetify-sass": "workspace:*",
     "@vitejs/plugin-vue": "^4.5.1",
     "sass": "^1.69.5",
-    "vite": "^4.5.1",
+    "vite": "^5.0.6",
     "vite-plugin-inspect": "^0.7.42",
     "vite-plugin-vuetify": "^1.0.2",
     "vue": "^3.3.10",
-    "vuetify": "^3.4.4"
+    "vuetify": "^3.4.5"
   }
 }
