@@ -1,7 +1,7 @@
 {
   "name": "@paro-paro/vite-plugin-vuetify-sass",
   "type": "module",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "packageManager": "pnpm@8.11.0",
   "description": "Vite plugin for loading vuetify SASS styles",
   "author": "Antonio PG <aparodyg@gmail.com>",
