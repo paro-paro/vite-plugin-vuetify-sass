@@ -92,11 +92,9 @@ export default defineNuxtConfig({
 })
 ```
 
-## Notes
+### Note
 
-This plugin does not include any auto-import or treeshaking functionality. For that, you still need to use the original vite-plugin-vuetify (as shown in the usage section). 
-
-Just make sure that you do not pass the `styles` option to the plugin. This way, only the internal import plugin (for treeshaking) will be used.
+This plugin does not include any auto-import or treeshaking functionality. For that, you still need to use the original vite-plugin-vuetify (as shown in the usage section). Just make sure that you do not pass the `styles` option to the plugin. This way, only the internal import plugin (for treeshaking) will be used.
 
 ## License
 
