@@ -18,7 +18,7 @@ Currently, there are several open issues and discussions around the slow perform
 
 The big performance hit seems to be a Nuxt specific [issue](https://github.com/nuxt/nuxt/issues/13824#issuecomment-1397319191) and heavily affects the DX with a very slow warm up time (dev server) when compiling SASS files.
 
-**Update:** Latest Nuxt 3.8.1 and 3.8.2 versions seem to have addressed this issue and the warm up time has being reduced significantly.
+**Update:** Latest Nuxt 3.8.1 and 3.8.2 versions seem to have addressed this issue and the warm up time has being reduced significantly. Check [#1](https://github.com/paro-paro/vite-plugin-vuetify-sass/issues/1) for details.
 
 ## Install
 
