@@ -1,11 +1,11 @@
 {
   "include": [
-    "src/**/*"
+    "./src/**/*.ts"
   ],
   "compilerOptions": {
     "target": "ES2020",
     "module": "ES2020",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "strict": true,
     "strictNullChecks": true,
