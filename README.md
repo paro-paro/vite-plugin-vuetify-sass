@@ -10,7 +10,7 @@ For more detailed info, check the [vuetify documentation](https://vuetifyjs.com/
 
 You can also check this [issue](https://github.com/vuetifyjs/vuetify-loader/issues/290) for context.
 
-> Be noted that, if you are not using Nuxt, it is recommended that you use the original `vite-plugin-vuetify`.
+> Be noted that, if you are not using Nuxt, it is recommended that you use the original `vite-plugin-vuetify`
 
 ## Install
 
