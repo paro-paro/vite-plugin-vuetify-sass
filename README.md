@@ -8,7 +8,7 @@ Meant to be used in `Nuxt` applications with `SSR` enabled.
 
 For more detailed info, check the [vuetify documentation](https://vuetifyjs.com/en/), specially the [SASS](https://vuetifyjs.com/en/features/sass-variables) and [treeshaking](https://vuetifyjs.com/en/features/treeshaking) sections. 
 
-You can also check this (in)famous [issue](https://github.com/vuetifyjs/vuetify-loader/issues/290) for context.
+You can also check this [issue](https://github.com/vuetifyjs/vuetify-loader/issues/290) for context.
 
 > Be noted that, if you are not using Nuxt, it is recommended that you use the original `vite-plugin-vuetify`.
 
