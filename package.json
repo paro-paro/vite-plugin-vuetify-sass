@@ -46,8 +46,8 @@
     "prepare:hooks": "simple-git-hooks",
     "prepublishOnly": "pnpm run build",
     "release": "bumpp && pnpm publish",
-    "vue": "pnpm --filter vue dev",
-    "nuxt": "pnpm --filter nuxt dev"
+    "vue": "pnpm run --filter vue dev",
+    "nuxt": "pnpm run --filter nuxt dev"
   },
   "peerDependencies": {
     "vite": "^3.1.0 || ^4.0.0 || ^5.0.0",
