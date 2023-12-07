@@ -12,14 +12,6 @@ You can also check this (in)famous [issue](https://github.com/vuetifyjs/vuetify-
 
 > Be noted that, if you are not using Nuxt, it is recommended that you use the original `vite-plugin-vuetify`.
 
-## SASS compilation
-
-Currently, there are several open issues and discussions around the slow performance of SASS compilation with Vite. Despite this, I have not experienced a significant performance hit when using this plugin in a Vite + Vue + Vuetify application.
-
-The big performance hit seems to be a Nuxt specific [issue](https://github.com/nuxt/nuxt/issues/13824#issuecomment-1397319191) and heavily affects the DX with a very slow warm up time (dev server) when compiling SASS files.
-
-**Update:** Latest Nuxt 3.8.1 and 3.8.2 versions seem to have addressed this issue and the warm up time has being reduced significantly. Check [#1](https://github.com/paro-paro/vite-plugin-vuetify-sass/issues/1) for details.
-
 ## Install
 
 Use your favorite package manager.
@@ -93,6 +85,14 @@ export default defineNuxtConfig({
 ### Note
 
 This plugin does not include any auto-import or treeshaking functionality. For that, you still need to use the original vite-plugin-vuetify (as shown in the usage section). Just make sure that you do not pass the `styles` option to the plugin. This way, only the internal import plugin (for treeshaking) will be used.
+
+## SASS compilation
+
+Currently, there are several open issues and discussions around the slow performance of SASS compilation with Vite. Despite this, I have not experienced a significant performance hit when using this plugin in a Vite + Vue + Vuetify application.
+
+The big performance hit seems to be a Nuxt specific [issue](https://github.com/nuxt/nuxt/issues/13824#issuecomment-1397319191) and heavily affects the DX with a very slow warm up time (dev server) when compiling SASS files.
+
+**Update:** Latest Nuxt 3.8.1 and 3.8.2 versions seem to have addressed this issue and the warm up time has being reduced significantly. Check [#1](https://github.com/paro-paro/vite-plugin-vuetify-sass/issues/1) for details.
 
 ## License
 
