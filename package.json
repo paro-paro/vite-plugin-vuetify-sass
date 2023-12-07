@@ -40,8 +40,8 @@
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
-    "dev:vue": "pnpm --filter vue dev",
-    "dev:nuxt": "pnpm --filter nuxt dev",
+    "vue": "pnpm --filter vue dev",
+    "nuxt": "pnpm --filter nuxt dev",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "typecheck": "tsc --noEmit",
