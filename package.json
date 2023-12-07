@@ -12,12 +12,7 @@
     "url": "git+https://github.com/paro-paro/vite-plugin-vuetify-sass.git"
   },
   "bugs": "https://github.com/paro-paro/vite-plugin-vuetify-sass/issues",
-  "keywords": [
-    "vite",
-    "vite-plugin",
-    "vuetify",
-    "sass"
-  ],
+  "keywords": ["vite", "vite-plugin", "vuetify-sass"],
   "exports": {
     "import": {
       "types": "./dist/index.d.mts",
